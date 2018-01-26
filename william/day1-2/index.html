@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="robots" content="noindex, nofollow">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/app.css">
+</head>
+<body>
+    <section class="hej">
+        <div class="inner">
+
+        <button class="sexyBtn">Push me once</button>
+        <div class="panel">
+            <p> Alex luktar inte av fläder.</p>
+            <img id="img" src="hej.png" alt="So MANLY!!">
+
+            <div id="modal" class="modal">
+
+                <div class="imgWrap">
+                    <div id="caption"></div>
+                    <span class="close">&times;</span>
+                    <img class="model-content" id="img1" alt="Soo manlyl">
+                </div>
+
+            </div>
+        </div>
+        <button class="sexyBtn">Touch me once</button>
+        <div class="panel">
+            <p> Alex luktar inte av fläder.</p>
+        </div>
+        <button class="sexyBtn">Feel me once</button>
+        <div class="panel">
+            <p> Alex luktar inte av fläder.</p>
+        </div>
+        <button class="sexyBtn">Move me once</button>
+        <div class="panel">
+            <p> Alex luktar inte av fläder.</p>
+        </div>
+        <button class="sexyBtn">Dance on me</button>
+        <div class="panel">
+            <p> Alex luktar inte av fläder.</p>
+        </div>
+
+    </div>
+    </setion>
+
+    <script>
+
+        var acc = document.getElementsByClassName('sexyBtn');
+        var i;
+
+        for (i = 0; i < acc.length; i++) {
+            acc[i].addEventListener('click', function(){
+                this.classList.toggle('active');
+
+                var panel = this.nextElementSibling;
+                panel.classList.toggle('show')
+            });
+        }
+
+
+        var modal = document.getElementById('modal')
+        var close = document.getElementsByClassName('close')[0]
+        var img = document.getElementById('img')
+        var modalImg = document.getElementById('img1')
+        var caption = document.getElementById('caption');
+
+
+        close.addEventListener('click', function(){
+            modal.style.display = 'none';
+        });
+
+        img.addEventListener('click', function(){
+            modal.style.display = 'flex';
+            modalImg.src = 'dab.png'
+            caption.innerHTML = this.alt;
+        });
+
+
+    </script>
+
+
+</body>
+</html>
