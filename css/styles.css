@@ -1,0 +1,78 @@
+
+.btn {
+	font-family: Arial, sans-serif;
+	color: #fff;
+	background: #e83123 url('img/ichiya.png') no-repeat 160px -30px;
+	overflow: visible;
+	text-align: center;
+	text-decoration: none;
+	font-weight: 800;
+	font-size: 20px;
+	letter-spacing: 2px;
+	display: block;
+	margin: 30px auto 0;
+	width: 400px;
+	padding: 34px 0;
+	border-radius: 10px;
+	text-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
+	box-shadow: 0 4px 6px rgba(0, 0, 0, 0.7), inset 0 1px 0 rgba(255, 255, 255, 0.2);
+	transition: all .4s;
+}
+
+.kyanser.active {
+    animation-name: flash;
+    animation-duration: 0.2s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-play-state: running;
+    transform: rotate(0deg);
+    font-size: 4em;
+}
+@keyframes flash {
+    from {
+        color: red;
+        transform: translate3d(0);
+        transform: scale(0);
+}
+
+
+    to {
+        color: skyblue;
+        transform: translate3d(180px, 69px, 42px);
+        transform: scale(4, 2);
+}
+}
+
+
+
+
+/*CANCER FROM HERE BEYOND */
+
+html,
+body {
+	height: 100%
+}
+
+.inner {
+	width: 100%;
+	max-width: 1000px;
+	margin: 0 auto;
+}
+
+/* ---- SEKTIONER ---- */
+
+/* 404 */
+.uhm {
+	height: 100%;
+	background: url('../img/sexy.png') 0 0 repeat;
+	background-size: 14.2%;
+}
+
+.uhm__img {
+	width: 50%;
+}
+
+h1 {
+	margin: 0
+}
